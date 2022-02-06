@@ -24,7 +24,7 @@ body{
     border: 1px solid #fff;
 }
 .h,.he,.f,.ne,.cl,.ar{
-    padding-top: 40px;
+    padding-top: 20px;
 }
 .li,.be,.na,.mg,.k,.ca{
     padding-top: 8px;
@@ -181,9 +181,9 @@ body{
 .bit-4 .symbol,.bit-4 .name,.bit-4 .mass{
     padding-right: 55px;
 }
-.h .mass{
+/* .h .mass{
     margin-bottom: 50px;
-}
+} */
 /* .atom-no,.elec-con{
     position: absolute;
     font-size: 13px;

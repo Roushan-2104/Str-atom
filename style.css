@@ -181,6 +181,9 @@ body{
 .bit-4 .symbol,.bit-4 .name,.bit-4 .mass{
     padding-right: 55px;
 }
+.h .mass{
+    margin-bottom: 50px;
+}
 /* .atom-no,.elec-con{
     position: absolute;
     font-size: 13px;

@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap');
+body{
+    font-family: 'Atomic Age', cursive;
+    background-color: black;
+    color: #fff;
+}
+.title{
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    
+}
+.title span{
+    font-size: 35px;
+}
+.elem-20{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.element{
+    text-align: center;
+    border: 1px solid #fff;
+}
+.h,.he,.f,.ne,.cl,.ar{
+    padding-top: 40px;
+}
+.li,.be,.na,.mg,.k,.ca{
+    padding-top: 8px;
+}
+.atoms{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.orbit{
+    border: 2px solid silver;
+    border-radius: 50%;
+    text-align: center;
+    padding: 16px;
+    position: relative;
+}
+.nucleus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.p-1{
+    background-color: rgb(8, 160, 8);
+    border-radius: 50%;
+    padding: 4px;
+    z-index: 100;
+}
+.proton{
+    background-color: rgb(8, 160, 8);
+    border-radius: 50%;
+    padding: 4px;
+    z-index: 100;
+    transform: translateX(-6px);
+}
+.neutron{
+    position: absolute;
+    transform: translateX(6px);
+    background-color: rgb(189, 45, 45);
+    border-radius: 50%;
+    padding: 4px 8px;
+}
+.electron{
+    position: absolute;
+    left: 50%;
+    top: 50%; /*from here */
+    animation:rotation 4s infinite linear; 
+}
+.electron::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: deeppink;
+    position: absolute;
+    border-radius: 50%;
+}
+.electron-1::before {
+    left: -75px;
+    top: -36px;
+    margin: 51px;
+}
+.electron-2::before{
+    left: 10px;
+    top: -30px;
+}
+.electron-3::before{
+    left: -45px;
+    top: -32px;
+}
+.electron-4::before{
+    left:30px;
+    top: 22px;
+}
+.electron-5::before{
+    left:-35px;
+    top: 30px;
+}
+.electron-6::before{
+    left:21px;
+    top: -45px;
+}
+.electron-7::before{
+    left: 40px;
+    top: -10px;
+}
+.electron-8::before{
+    left: -52px;
+    top: 1px;
+}
+.electron-9::before{
+    top: -54px;
+    left: -13px;
+}
+.electron-10::before{
+    top: 40px;
+    left: 0px;
+}
+.electron-11::before{
+    top: -58px;
+    left: 32px;
+}
+.electron-12::before{
+    top: 45px;
+    left: -45px;
+}
+.electron-13::before{
+    top: -42px;
+    left: -62px;
+}
+.electron-14::before{
+    top: 32px;
+    left: 48px;
+}
+.electron-15::before{
+    top: -70px;
+    left: -18px;
+}
+.electron-16::before{
+    top: 58px;
+    left: 5px;
+}
+.electron-17::before{
+    top: 4px;
+    left: -70px;
+}
+.electron-18::before{
+    top: -12px;
+    left: 58px;
+}
+.electron-19::before{
+    top: -72px;
+    left: 44px;
+}
+.electron-20::before{
+    top: 60px;
+    left: -56px;
+}
+.at-no-elec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bit-1 .symbol,.bit-1 .name,.bit-1 .mass{
+    padding-right: 16px;
+}
+.bit-2 .symbol,.bit-2 .name,.bit-2 .mass{
+    padding-right: 35px;
+}
+.bit-3 .symbol,.bit-3 .name,.bit-3 .mass{
+    padding-right: 42px;
+}
+.bit-4 .symbol,.bit-4 .name,.bit-4 .mass{
+    padding-right: 55px;
+}
+/* .atom-no,.elec-con{
+    position: absolute;
+    font-size: 13px;
+}
+.orb-1{
+    transform: translateY(20px);
+}
+.orb-2{
+    transform: translateY(38px);
+}
+.orb-3{
+    transform: translateY(55px);
+}
+.orb-4{
+    transform: translateY(75px);
+}
+.orb-1 .atom-no{
+    transform: translateX(115px);
+}
+.orb-1 .elec-con{
+    transform: translateX(205px);
+}
+.orb-2 .atom-no{
+    transform: translateX(90px);
+}
+.orb-2 .elec-con{
+    transform: translateX(225px);
+}
+.orb-3 .atom-no{
+    transform: translateX(60px);
+}
+.orb-3 .elec-con{
+    transform: translateX(245px);
+}
+.orb-4 .atom-no{
+    transform: translateX(52px);
+}
+.orb-4 .elec-con{
+    transform: translateX(255px);
+} */
+@keyframes rotation {
+    0% {
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+@media (max-width:1310px) {
+    /* .orb-1 .atom-no{
+        transform: translateX(108px);
+    }
+    .orb-1 .elec-con{
+        transform: translateX(198px);
+    }
+    .orb-2 .elec-con{
+        transform: translateX(215px);
+    }
+    .orb-3 .atom-no{
+        transform: translateX(70px);
+    }
+    .orb-3 .elec-con{
+        transform: translateX(235px);
+    }
+    .orb-4 .atom-no{
+        transform: translateX(45px);
+    }
+    .orb-4 .elec-con{
+        transform: translateX(248px);
+    } */
+}
+@media (max-width:1260px) {
+    .elem-20{
+        grid-template-columns: repeat(3,1fr);
+    }
+    /* .orb-1 .atom-no{
+        transform: translateX(155px);
+    }
+    .orb-1 .elec-con{
+        transform: translateX(245px);
+    }
+    .orb-2 .atom-no{
+        transform: translateX(135px);
+    }
+    .orb-2 .elec-con{
+        transform: translateX(265px);
+    }
+    .orb-3 .atom-no{
+        transform: translateX(108px);
+    }
+    .orb-3 .elec-con{
+        transform: translateX(275px);
+    }
+    .orb-4 .atom-no{
+        transform: translateX(85px);
+    }
+    .orb-4 .elec-con{
+        transform: translateX(292px);
+    } */
+}
+@media (max-width:900px) {
+    .elem-20{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:650px) {
+    .elem-20{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
